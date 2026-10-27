@@ -75,6 +75,10 @@ header {
     background-color: transparent;
 }
 
+.bar {
+    display: none;
+}
+
 main {
     margin-top: 5%;
     /* padding: 0px 5%; */
@@ -166,7 +170,8 @@ main {
     flex-direction: column;
 
 }
-.project:hover{
+
+.project:hover {
     box-shadow: 0px 4px 50px blue;
     transform: scale(1.08);
 
@@ -308,7 +313,8 @@ footer {
     width: 30px;
     filter: brightness(0)invert(1);
 }
-.footer .last-footer img:hover{
+
+.footer .last-footer img:hover {
     filter: none;
 }
 
@@ -317,8 +323,9 @@ footer {
     font-size: 1rem;
     font-weight: 600;
 }
-.footer-content{
-    flex:1;
+
+.footer-content {
+    flex: 1;
     margin-left: 2rem;
 }
 
@@ -371,7 +378,8 @@ footer {
         gap: 1.5rem;
     }
 
-    .header-link ul li a, .header-link .contact-link {
+    .header-link ul li a,
+    .header-link .contact-link {
         font-size: 1.1rem;
     }
 
@@ -412,7 +420,8 @@ footer {
         margin-bottom: 25px;
     }
 
-    .html, .css {
+    .html,
+    .css {
         font-size: 1rem;
     }
 
@@ -431,32 +440,37 @@ footer {
     /* Header */
     header {
         padding: 10px 5%;
-        position: relative;
-        flex-wrap: wrap;
     }
 
     .site-logo img {
-        width: 120px;
+        width: 130px;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .bar img {
+        width: 30px;
+        height: 30px;
     }
 
     .header-link {
         gap: 10px;
-        margin: 5px 0;
-        flex-wrap: wrap;
+        display: none;
     }
 
     .header-link ul {
-        gap: 12px;
-        padding: 0;
-        margin: 0;
+        gap: 10px;
+        padding-left: 0;
     }
 
     .header-link ul li a {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .header-link .contact-link {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         padding: 8px 12px;
     }
 
@@ -472,7 +486,8 @@ footer {
         margin-bottom: 5%;
     }
 
-    .left-content, .right-content {
+    .left-content,
+    .right-content {
         width: 100%;
         flex: 1 1 100%;
         min-width: 0;
@@ -547,7 +562,8 @@ footer {
         gap: 8px;
     }
 
-    .html, .css {
+    .html,
+    .css {
         font-size: 0.9rem;
         padding: 5px 8px;
     }
@@ -619,7 +635,8 @@ footer {
         gap: 1.5rem;
     }
 
-    .header-link ul li a, .header-link .contact-link {
+    .header-link ul li a,
+    .header-link .contact-link {
         font-size: 1.1rem;
     }
 
@@ -628,7 +645,8 @@ footer {
         padding: 120px 3% 5%;
     }
 
-    .left-contact, .right-contact {
+    .left-contact,
+    .right-contact {
         min-width: 0;
     }
 
@@ -682,7 +700,8 @@ footer {
         box-sizing: border-box;
     }
 
-    .left-contact, .right-contact {
+    .left-contact,
+    .right-contact {
         width: 100%;
         flex: 1 1 100%;
         min-width: 0;
@@ -713,7 +732,8 @@ footer {
     }
 
     /* Form */
-    input, textarea {
+    input,
+    textarea {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;

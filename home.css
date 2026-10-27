@@ -46,7 +46,7 @@ header {
     margin: 10px 0px;
 }
 
-.header-link .bar {
+.bar {
     display: none;
 }
 
@@ -563,7 +563,8 @@ footer {
 /* TABLET RESPONSIVENESS */
 @media (max-width: 1024px) {
 
-    .first-section, .second-section {
+    .first-section,
+    .second-section {
         gap: 2rem;
     }
 
@@ -579,7 +580,8 @@ footer {
         font-size: 2.3rem;
     }
 
-    .left-content .name-content, .left-content .t {
+    .left-content .name-content,
+    .left-content .t {
         width: 100%;
     }
 
@@ -610,8 +612,18 @@ footer {
         width: 130px;
     }
 
+    .bar {
+        display: block;
+    }
+
+    .bar img {
+        width: 30px;
+        height: 30px;
+    }
+
     .header-link {
         gap: 10px;
+        display: none;
     }
 
     .header-link ul {
@@ -628,7 +640,8 @@ footer {
         padding: 8px 12px;
     }
 
-    .first-section, .second-section {
+    .first-section,
+    .second-section {
         flex-direction: column;
         gap: 2rem;
         padding: 100px 5% 5%;
@@ -638,7 +651,10 @@ footer {
         padding-top: 5%;
     }
 
-    .left-content, .right-content, .second-section .left-second, .second-section .right-second {
+    .left-content,
+    .right-content,
+    .second-section .left-second,
+    .second-section .right-second {
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
@@ -652,7 +668,8 @@ footer {
         font-size: 1.8rem;
     }
 
-    .left-content .name-content, .left-content .t {
+    .left-content .name-content,
+    .left-content .t {
         width: 100%;
         font-size: 1rem;
         line-height: 1.7rem;
@@ -664,11 +681,13 @@ footer {
         margin-top: 1.5rem;
     }
 
-    .second-section .left-second h2, .third-section .third-part h2 {
+    .second-section .left-second h2,
+    .third-section .third-part h2 {
         font-size: 2rem;
     }
 
-    .second-section p, .third-section .third-part p {
+    .second-section p,
+    .third-section .third-part p {
         font-size: 1rem;
         line-height: 1.7rem;
     }
@@ -715,7 +734,8 @@ footer {
         gap: 10px;
     }
 
-    .html, .css {
+    .html,
+    .css {
         font-size: 0.9rem;
     }
 

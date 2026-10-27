@@ -77,6 +77,10 @@ header {
     background-color: transparent;
 }
 
+.bar {
+    display: none;
+}
+
 main {
     margin-top: 5%;
     padding: 0px 5%;
@@ -220,7 +224,7 @@ main {
     display: block;
     width: 100%;
     /* border: 1px solid; */
-   margin-top:  4rem;
+    margin-top: 4rem;
 
 }
 
@@ -296,31 +300,37 @@ main {
     display: block;
     margin-top: 20%;
 }
-.right-third p{
+
+.right-third p {
     font-size: 1.5rem;
     width: 100%;
     font-weight: 600;
     margin-top: 0%;
 }
-.right-third img{
+
+.right-third img {
     width: 40%;
     margin-bottom: 0%;
     margin-left: 30px;
 }
-.third h1{
+
+.third h1 {
     font-size: 3rem;
     margin-bottom: 0%;
 }
-.third p{
+
+.third p {
     font-size: 1.5rem;
     font-weight: 600;
 }
-.fourth{
+
+.fourth {
     display: flex;
     gap: 2rem;
     margin-top: 10%;
 }
-.left-fourth{
+
+.left-fourth {
     flex: 1;
     min-width: 0;
     box-sizing: border-box;
@@ -328,21 +338,25 @@ main {
     border-radius: 40px;
     padding: 20px 30px;
 }
-.left-content{
+
+.left-content {
     display: flex;
     gap: 2rem;
 }
-.left-fourth h2{
+
+.left-fourth h2 {
     font-size: 2.5rem;
     margin-top: 0%;
 }
-.left-content img{
+
+.left-content img {
     width: 20%;
     background-color: whitesmoke;
     border-radius: 50%;
     padding: 20px;
 }
-.left-content .school .sec{
+
+.left-content .school .sec {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -351,17 +365,20 @@ main {
     width: 100%;
     justify-content: space-between;
     /* border: 1px solid; */
-   
+
 }
-.left-content .school h4{
+
+.left-content .school h4 {
     font-size: 1.3rem;
     margin-bottom: 0%;
 }
-.left-content .school .sec p{
+
+.left-content .school .sec p {
     font-weight: 500;
     margin-top: 2%;
 }
-.right-fourth{
+
+.right-fourth {
     flex: 1;
     min-width: 0;
     box-sizing: border-box;
@@ -369,31 +386,36 @@ main {
     border-radius: 40px;
     padding: 20px 30px;
 }
-.right-fourth .right-content{
+
+.right-fourth .right-content {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
-.right-fourth .right-content img{
+
+.right-fourth .right-content img {
     width: 60%;
     align-items: center;
     margin-left: 30px;
     margin-bottom: 0%;
 }
-.right-content .art{
+
+.right-content .art {
     background-color: whitesmoke;
-   padding: 5%;
-   box-sizing: border-box;
-   border-radius: 40px;
-   flex: 1 1 100px;
-   min-width: 0;
-   text-align: center;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 40px;
+    flex: 1 1 100px;
+    min-width: 0;
+    text-align: center;
 }
-.right-fourth h2{
+
+.right-fourth h2 {
     font-size: 2.5rem;
     margin-top: 0%;
 }
-.right-content p{
+
+.right-content p {
     font-size: 2rem;
     margin-left: 0px;
     text-align: center;
@@ -401,12 +423,14 @@ main {
     margin-top: 0%;
     font-weight: 500;
 }
-footer{
-    padding:3% 5%;
+
+footer {
+    padding: 3% 5%;
 }
-.footer{
+
+.footer {
     display: flex;
-    background: linear-gradient(to right, rgb(134, 74, 253)20%,rgb(34, 144, 233)80%, rgb(123, 189, 243)100%);
+    background: linear-gradient(to right, rgb(134, 74, 253)20%, rgb(34, 144, 233)80%, rgb(123, 189, 243)100%);
     /* margin: 5% 5% ; */
     margin-bottom: 30px;
     border-radius: 40px;
@@ -415,12 +439,14 @@ footer{
     align-items: center;
     gap: 10px;
 }
-.first-footer{
+
+.first-footer {
     /* flex: 1; */
     min-width: 0%;
     /* border: 1px solid; */
 }
-.footer img{
+
+.footer img {
     background-color: rgb(167, 167, 255);
     border-radius: 50%;
     width: 70%;
@@ -429,15 +455,18 @@ footer{
     margin-right: 0%;
     /* filter:brightness(0)invert(1); */
 }
-.footer .cont{
+
+.footer .cont {
     display: block;
 }
-.footer h3{
+
+.footer h3 {
     font-size: 2.5rem;
     margin-bottom: 0%;
     min-width: 0;
 }
-.footer p{
+
+.footer p {
     font-size: 1.5rem;
     margin-top: 0%;
     min-width: 0;
@@ -475,6 +504,41 @@ footer{
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .site-logo img {
+        width: 130px;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .bar img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-link {
+        gap: 10px;
+        display: none;
+    }
+
+    .header-link ul {
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .header-link ul li a {
+        font-size: 0.8rem;
+    }
+
+    .header-link .contact-link {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
 
     /* First section */
     .first {
@@ -483,7 +547,7 @@ footer{
         padding: 100px 5% 30px;
     }
 
-    .first > * {
+    .first>* {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
@@ -501,7 +565,7 @@ footer{
         gap: 1rem;
     }
 
-    .second-second > * {
+    .second-second>* {
         width: 100%;
         box-sizing: border-box;
     }
@@ -513,7 +577,8 @@ footer{
         gap: 2rem;
     }
 
-    .left-third, .right-third {
+    .left-third,
+    .right-third {
         width: 100%;
         flex: 1 1 100%;
         box-sizing: border-box;
@@ -536,7 +601,8 @@ footer{
         gap: 1.5rem;
     }
 
-    .left-fourth, .right-fourth {
+    .left-fourth,
+    .right-fourth {
         width: 100%;
         flex: 1 1 100%;
         box-sizing: border-box;
