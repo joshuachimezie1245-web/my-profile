@@ -2,7 +2,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -20,8 +20,9 @@ header {
     justify-content: space-between;
     background-color: white;
     position: fixed;
-    padding: 0px 80px;
+    padding: 0px 5%;
     width: 100%;
+    box-sizing: border-box;
     top: 0%;
     z-index: 999;
 }
@@ -41,7 +42,6 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
-    padding-right: 10%;
     margin: 10px 0px;
 }
 
@@ -83,13 +83,14 @@ main {
 
 .first {
     display: flex;
-    gap: 8rem;
+    gap: 3rem;
     padding: 5% 0px;
     padding: 0px 5%;
     margin-bottom: 5%;
 }
 
 .left-content {
+    flex: 1;
     width: 50%;
     margin-top: 90px;
 }
@@ -119,11 +120,16 @@ main {
 }
 
 .right-content {
+    flex: 1;
     width: 50%;
 }
 
 .right-content img {
+    display: block;
     width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
     border-radius: 40px;
     margin-top: 30px;
 }
@@ -142,18 +148,22 @@ main {
 
 .project-images {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .project {
     background-color: white;
-    width: auto;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
     border-radius: 20px;
     padding: 20px;
-    padding-bottom: 0cap;
+    padding-bottom: 0;
     margin-top: 50px;
     transition: transform 0.4s ease;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 
 }
 .project:hover{
@@ -163,9 +173,12 @@ main {
 }
 
 .project .main {
+    display: block;
     width: 100%;
-    border-radius: 20px;
+    max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .project a {
@@ -208,15 +221,19 @@ main {
 
 .code-content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 0%;
+    gap: 10px;
+    min-width: 0;
+    margin-top: auto;
     padding-bottom: 0%;
 }
 
 .code {
     display: flex;
-    gap: 1.5rem;
-    margin-bottom: 0%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0;
 }
 
 .html {
@@ -252,14 +269,7 @@ main {
     color: rgb(94, 89, 89);
     margin-top: 0%;
     margin-bottom: 50px;
-}
-
-.project .image6 {
-    height: 64%;
-}
-
-.project .image3 {
-    height: 66%;
+    flex-grow: 1;
 }
 
 footer {
@@ -339,4 +349,383 @@ footer {
     margin-top: 0px;
     width: 100%;
     text-transform: capitalize;
+}
+
+
+/* TABLET CSS */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 0 3%;
+    }
+
+    .site-logo img {
+        width: 150px;
+    }
+
+    .header-link {
+        gap: 1.5rem;
+    }
+
+    .header-link ul {
+        gap: 1.5rem;
+    }
+
+    .header-link ul li a, .header-link .contact-link {
+        font-size: 1.1rem;
+    }
+
+    .first {
+        gap: 2rem;
+    }
+
+    .left-content {
+        min-width: 0;
+    }
+
+    .left-content h1 {
+        font-size: 3rem;
+    }
+
+    .left-content p {
+        font-size: 1.1rem;
+    }
+
+    .top h2 {
+        font-size: 3rem;
+    }
+
+    .project-images {
+        gap: 1.5rem;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .project .h2 {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+
+    .html, .css {
+        font-size: 1rem;
+    }
+
+    .project:hover {
+        transform: scale(1.02);
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE CSS */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        padding: 10px 5%;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .site-logo img {
+        width: 120px;
+    }
+
+    .header-link {
+        gap: 10px;
+        margin: 5px 0;
+        flex-wrap: wrap;
+    }
+
+    .header-link ul {
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-link ul li a {
+        font-size: 0.85rem;
+    }
+
+    .header-link .contact-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    /* First section */
+    main {
+        margin-top: 0;
+    }
+
+    .first {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px 5%;
+        margin-bottom: 5%;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .left-content {
+        margin-top: 10px;
+    }
+
+    .left-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-content h3 {
+        font-size: 1rem;
+    }
+
+    .left-content p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .right-content img {
+        width: 100%;
+        margin-top: 0;
+        border-radius: 20px;
+    }
+
+    /* Project section */
+    .top {
+        padding: 8% 5%;
+    }
+
+    .top h2 {
+        font-size: 2rem;
+    }
+
+    .project-images {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .project {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+        margin-top: 25px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .project .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .project h3 {
+        font-size: 1.4rem;
+    }
+
+    .project .h2 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .code-content {
+        gap: 10px;
+    }
+
+    .code {
+        gap: 8px;
+    }
+
+    .html, .css {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    .project a .span {
+        padding: 5px;
+        height: 25px;
+    }
+
+    .project a img {
+        width: 25px;
+    }
+
+    .project:hover {
+        transform: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .left-footer img {
+        width: 50px;
+    }
+
+    .footer-content {
+        margin-left: 0;
+    }
+
+    .footer-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-content p {
+        font-size: 0.95rem;
+    }
+
+    .footer .last-footer {
+        margin-top: 10px;
+        padding: 0 15px;
+        align-self: flex-start;
+    }
+}
+
+/* TABLET CSS */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 0 3%;
+    }
+
+    .site-logo img {
+        width: 150px;
+    }
+
+    .header-link {
+        gap: 1.5rem;
+    }
+
+    .header-link ul {
+        gap: 1.5rem;
+    }
+
+    .header-link ul li a, .header-link .contact-link {
+        font-size: 1.1rem;
+    }
+
+    main {
+        gap: 2rem;
+        padding: 120px 3% 5%;
+    }
+
+    .left-contact, .right-contact {
+        min-width: 0;
+    }
+
+    .right-contact {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* MOBILE CSS */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        position: relative;
+        padding: 10px 5%;
+        flex-wrap: wrap;
+    }
+
+    .site-logo img {
+        width: 120px;
+    }
+
+    .header-link {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 5px 0;
+    }
+
+    .header-link ul {
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-link ul li a {
+        font-size: 0.85rem;
+    }
+
+    .header-link .contact-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    /* Main contact section */
+    main {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 25px 5%;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+
+    .left-contact, .right-contact {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .right-contact {
+        padding: 20px;
+    }
+
+    /* Contact details */
+    .contact-icons {
+        gap: 10px;
+    }
+
+    .contact-icons img {
+        max-width: 35px;
+        height: auto;
+    }
+
+    .content-icon {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .contact-icons .content-icon p {
+        overflow-wrap: anywhere;
+    }
+
+    /* Form */
+    input, textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        min-width: 0;
+        height: 120px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5%;
+    }
 }
